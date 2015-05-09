@@ -14,8 +14,9 @@ names(data) <- names(read.table("household_power_consumption.txt", sep = ";",
 # Create a new date time column
 data$datetime <- strptime(paste(data$Date, data$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S")
 
-#Plot variation of submetering for two days and save it as plot3.png in your 
+#Plot variation of submetering for two days and save it as plot3.png (480 x 480 pixels) in your 
 # working direcotory
+# Default values for png function output is (width = 480, height = 480, units = "px")
 
 png(filename = "plot3.png")
 with(data, plot(y = Sub_metering_1, x= datetime, type= "l", ylab = "Energy sub metering", xlab = " "))
