@@ -14,8 +14,9 @@ names(data) <- names(read.table("household_power_consumption.txt", sep = ";",
 # Create a new date time column
 data$datetime <- strptime(paste(data$Date, data$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S")
 
-#Plot variation of Global_active_power for two days and save it as plot2.png in your 
+#Plot variation of Global_active_power for two days and save it as plot2.png (480 x 480 pixels) in your 
 # working direcotory
+# Default values for png function output is (width = 480, height = 480, units = "px")
 png(filename = "plot2.png")
 with(data, plot(datetime,Global_active_power, type = "l", 
                 xlab = " " , ylab = "Global Active Power (kilowatts)"))
