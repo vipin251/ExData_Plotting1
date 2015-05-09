@@ -13,8 +13,9 @@ names(data) <- names(read.table("household_power_consumption.txt", sep = ";",
 # Create a new date time column
 data$datetime <- strptime(paste(data$Date, data$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S")
 
-#Plot histogram of Global_active_power for two days and save it as plot1.png in your 
+#Plot histogram of Global_active_power for two days and save it as plot1.png (480 x 480 pixels) in your 
 # working direcotory
+# Default values for png function output are (width = 480, height = 480, units = "px")
 png(filename = "plot1.png")
 hist(data$Global_active_power, col = "red", xlab = "Glabal Active Power (kilowats)",
      main = "Global Active Power")
