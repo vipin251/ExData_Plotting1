@@ -1,5 +1,4 @@
-## R script to read and plot the variation  of sub metering for two days
-# from "household_power_consumption.txt" from your working direcoty. 
+## R script to read and plot the variation  of sub metering for two days from "household_power_consumption.txt" 
 # R script will save the plot3.png in your working directory 
 
 ## Keep household_power_consumption.txt in your working directory
