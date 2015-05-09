@@ -16,8 +16,8 @@ names(data) <- names(read.table("household_power_consumption.txt", sep = ";",
 data$datetime <- strptime(paste(data$Date, data$Time, sep = " "), format = "%d/%m/%Y %H:%M:%S")
 
 ## Plot variation of Global active power, Volatge, submetering and Global reactive power
-## for two days and save it as plot4.png in your 
-# working direcotory
+## for two days and save it as plot4.png (480 x 480 pixels) in your working direcotory
+# Default values for png function output is (width = 480, height = 480, units = "px")
 png(filename = "plot4.png")
 par(mfcol = c(2,2))
 with(data, plot(datetime,Global_active_power, type = "l", 
