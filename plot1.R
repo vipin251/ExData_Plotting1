@@ -1,5 +1,5 @@
-## R script to read and plot a histogram of Global active power from "household_power_consumption.txt"
-## from your working direcoty. R script will save the plot1.png in your working directory 
+## R script to read and plot a histogram of Global active power from "household_power_consumption.txt".
+## R script will save the plot1.png in your working directory 
 
 ## keep household_power_consumption.txt in your working directory
 
