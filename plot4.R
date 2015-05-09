@@ -1,6 +1,5 @@
 ## R script to read and plot the variation  of Global active power, Voltage,
-## sub metering and Global reactive power for two days
-## from "household_power_consumption.txt" from your working direcoty. 
+## sub metering and Global reactive power for two days from "household_power_consumption.txt" 
 ## R script will save the plot4.png in your working directory 
 
 ## Keep household_power_consumption.txt in your working directory
